@@ -1,0 +1,1 @@
+document.addEventListener("scroll",(function(){-((document.body.scrollHeight||document.documentElement.scrollHeight)-(document.body.scrollTop||document.documentElement.scrollTop+document.documentElement.clientHeight))>1.75*document.documentElement.clientHeight||$(".DiscussionList-loadMore button").click()}),{passive:!0});
