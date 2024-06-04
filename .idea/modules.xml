@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/flarum-custom-preview.iml" filepath="$PROJECT_DIR$/.idea/flarum-custom-preview.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/flarum-composer.iml" filepath="$PROJECT_DIR$/.idea/flarum-composer.iml" />
     </modules>
   </component>
 </project>
