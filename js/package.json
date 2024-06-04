@@ -1,6 +1,6 @@
 {
     "private": true,
-    "name": "@dhtml/flarum-custom-preview",
+    "name": "@dhtml/composer",
     "dependencies": {
         "@flarum/prettier-config": "^1.0.0",
         "flarum-tsconfig": "^1.0.2",

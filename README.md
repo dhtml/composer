@@ -1,6 +1,6 @@
 # Preview Discussion
 
-![License](https://img.shields.io/badge/license-MIT-blue.svg) [![Latest Stable Version](https://img.shields.io/packagist/v/dhtml/flarum-custom-preview.svg)](https://packagist.org/packages/dhtml/flarum-custom-preview)
+![License](https://img.shields.io/badge/license-MIT-blue.svg) [![Latest Stable Version](https://img.shields.io/packagist/v/dhtml/composer.svg)](https://packagist.org/packages/dhtml/composer)
 
 A [Flarum](http://flarum.org) extension. Preview the final output when editing a new discussion
 
@@ -9,15 +9,15 @@ A [Flarum](http://flarum.org) extension. Preview the final output when editing a
 Use [Bazaar](https://discuss.flarum.org/d/5151-flagrow-bazaar-the-extension-marketplace) or install manually with composer:
 
 ```sh
-composer require dhtml/flarum-custom-preview
+composer require dhtml/composer
 ```
 
 ### Updating
 
 ```sh
-composer update dhtml/flarum-custom-preview
+composer update dhtml/composer
 ```
 
 ### Links
 
-- [Packagist](https://packagist.org/packages/dhtml/flarum-custom-preview)
+- [Packagist](https://packagist.org/packages/dhtml/composer)
