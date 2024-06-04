@@ -15,6 +15,22 @@
             "homepage": "https://africoders.com/"
         }
     ],
+    "extra": {
+        "flarum-extension": {
+            "title": "Composer Preview BBCode",
+            "category": "feature",
+            "icon": {
+                "name": "far fa-eye",
+                "backgroundColor": "#008000",
+                "color": "#fff"
+            }
+        },
+        "flarum-cli": {
+            "modules": {
+                "githubActions": true
+            }
+        }
+    },
     "homepage": "https://africoders.com",
     "require": {
         "php": "^8.0",
