@@ -15,10 +15,13 @@
             "homepage": "https://africoders.com/"
         }
     ],
+    "require": {
+        "flarum/core": "^1.0"
+    },
     "autoload": {
         "psr-4": {
             "Dhtml\\Composer\\": "src/",
-            "Dhtml\\Composer\\Controllers\\": "src/Controllers/"
+            "Dhtml\\Composer\\Controllers\\": "src/Controllers"
         }
     },
     "extra": {
