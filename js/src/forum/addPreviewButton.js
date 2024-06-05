@@ -59,7 +59,7 @@ export default function () {
           //console.log('#preview-snippet-title is visible');
           var otitle = this.composer.fields.title();
           var ocontent = this.composer.fields.content();
-          s9e.TextFormatter.preview(otext, $('#preview-snippet-body')[0]);
+          s9e.TextFormatter.preview(ocontent, $('#preview-snippet-body')[0]);
           $('#preview-snippet-title').html(otitle);
         } else {
           //console.log('#preview-snippet-title is not visible');
