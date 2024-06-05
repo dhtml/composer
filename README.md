@@ -4,7 +4,9 @@
 
 A [Flarum](http://flarum.org) extension. Preview the final output when editing a new discussion
 
-<img width="518" alt="flarum discussion" src="https://github.com/dhtml/composer/assets/948100/c800b445-667c-41f8-b77e-c2b7929a8e18">
+![Image Description](https://github.com/dhtml/composer/assets/948100/c800b445-667c-41f8-b77e-c2b7929a8e18)
+
+
 
 
 ### Installation
