@@ -18,10 +18,10 @@
     "require": {
         "flarum/core": "^1.0"
     },
-    "autoload": {
+	"autoload": {
         "psr-4": {
-            "Dhtml\\Composer\\": "src/",
-            "Dhtml\\Composer\\Controllers\\": "src/Controllers"
+            "Dhtml\\COMPOSER\\": "src/",
+            "Dhtml\\COMPOSER\\Controllers\\": "src/Controllers"
         }
     },
     "extra": {

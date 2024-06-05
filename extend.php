@@ -1,7 +1,7 @@
 <?php
-namespace Dhtml\Composer;
+namespace Dhtml\COMPOSER;
 
-use Dhtml\Composer\Controllers\PreviewController;
+use Dhtml\COMPOSER\Controllers\PreviewController;
 use Flarum\Extend;
 
 return [

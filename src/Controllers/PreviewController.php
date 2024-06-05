@@ -1,6 +1,6 @@
 <?php
 
-namespace Dhtml\Composer\Controllers;
+namespace Dhtml\COMPOSER\Controllers;
 
 use Psr\Http\Message\ServerRequestInterface as Request;
 use Psr\Http\Message\ResponseInterface;
