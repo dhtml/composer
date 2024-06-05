@@ -15,6 +15,12 @@
             "homepage": "https://africoders.com/"
         }
     ],
+    "autoload": {
+        "psr-4": {
+            "Dhtml\\Composer\\": "src/",
+            "Dhtml\\Composer\\Controllers\\": "src/Controllers/"
+        }
+    },
     "extra": {
         "flarum-extension": {
             "title": "Composer Preview BBCode",
@@ -33,17 +39,6 @@
     },
     "homepage": "https://africoders.com",
     "require": {
-        "php": "^8.0",
-        "ext-json": "*",
-        "enshrined/svg-sanitize": "^0.15.4",
-        "flarum/core": "^1.8.3",
-        "guzzlehttp/guzzle": "^6.0 || ^7.0",
-        "ramsey/uuid": "^3.5.2 || ^4",
-        "softcreatr/php-mime-detector": "^3.0"
-    },
-    "autoload": {
-        "psr-4": {
-            "Dhtml\\CustomPreview\\": "src/"
-        }
+        "flarum/core": "^1.8"
     }
 }
