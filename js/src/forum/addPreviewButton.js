@@ -43,6 +43,8 @@ export default function () {
   extend(TextEditor.prototype, 'oninit', function () {
     //console.log("TextEditor OnInit");
 
+    this.composer = app.composer;
+
     this.previewTimer = null;
 
     if(!this.attrs.preview) {
@@ -54,15 +56,15 @@ export default function () {
       this.previewTimer = setInterval(()=> {
 
         if ($('#preview-snippet-title').is(':visible')) {
-          console.log('#preview-snippet-title is visible');
-          const mdTitle = $(".ComposerBody-content input.FormControl").val();
-          const mdText = $("textarea.TextEditor-editor").val();
-          s9e.TextFormatter.preview(mdText, $('#preview-snippet-body')[0]);
-          $('#preview-snippet-title').html(mdTitle);
+          //console.log('#preview-snippet-title is visible');
+          var otitle = this.composer.fields.title();
+          var ocontent = this.composer.fields.content();
+          s9e.TextFormatter.preview(otext, $('#preview-snippet-body')[0]);
+          $('#preview-snippet-title').html(otitle);
         } else {
-          console.log('#preview-snippet-title is not visible');
+          //console.log('#preview-snippet-title is not visible');
         }
-      },300);
+      },3000);
     }
 
   });
