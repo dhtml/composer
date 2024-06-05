@@ -26,7 +26,7 @@
     },
     "extra": {
         "flarum-extension": {
-            "title": "Composer Preview BBCode",
+            "title": "Composer Preview",
             "category": "feature",
             "icon": {
                 "name": "far fa-eye",
