@@ -17,4 +17,7 @@ return [
 
     (new Extend\View())
         ->namespace('dhtml-composer', __DIR__.'/resources/views'),
+
+    new Extend\Locales(__DIR__.'/locale'),
+
 ];
