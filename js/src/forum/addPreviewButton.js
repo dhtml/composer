@@ -41,7 +41,7 @@ const preview = () => {
 export default function () {
 
   extend(TextEditor.prototype, 'oninit', function () {
-    //console.log("TextEditor OnInit");
+    console.log("TextEditor OnInit");
 
     this.composer = app.composer;
 
