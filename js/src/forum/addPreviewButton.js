@@ -41,11 +41,19 @@ const preview = () => {
 export default function () {
 
   extend(TextEditor.prototype, 'oninit', function () {
-    console.log("TextEditor OnInit");
+    //console.log("TextEditor OnInit");
 
     this.composer = app.composer;
 
     this.previewTimer = null;
+
+
+    this.xterTimer = setInterval(()=> {
+        let htmlcontent = $('.TextEditor-editorContainer .TextEditor-editor').html();
+        let formattedNumber = htmlcontent.length.toLocaleString('en-US');
+        $('.CharacterCounter .Button-label').html(formattedNumber);
+    },3000);
+
 
     if(!this.attrs.preview) {
       $(".DiscussionList-discussions").append(snippet);
@@ -58,8 +66,12 @@ export default function () {
         if ($('#preview-snippet-title').is(':visible')) {
           //console.log('#preview-snippet-title is visible');
           var otitle = this.composer.fields.title();
-          var ocontent = this.composer.fields.content();
-          s9e.TextFormatter.preview(ocontent, $('#preview-snippet-body')[0]);
+
+          var htmlcontent = $('.TextEditor-editorContainer .TextEditor-editor').html();
+          $('#preview-snippet-body').html(htmlcontent);
+
+          //var ocontent = this.composer.fields.content();
+          //s9e.TextFormatter.preview(ocontent, $('#preview-snippet-body')[0]);
           $('#preview-snippet-title').html(otitle);
         } else {
           //console.log('#preview-snippet-title is not visible');
@@ -99,6 +111,8 @@ export default function () {
       $(snippetId).remove();
       clearInterval(this.previewTimer);
     }
+
+    clearInterval(this.xterTimer);
 
   });
 }
