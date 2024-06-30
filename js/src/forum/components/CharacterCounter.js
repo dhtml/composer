@@ -1,4 +1,6 @@
 import Component from 'flarum/common/Component';
+import Tooltip from "flarum/common/components/Tooltip";
+import app from 'flarum/forum/app';
 
 export default class CharacterCounter extends Component {
   oninit(vnode) {
@@ -10,9 +12,11 @@ export default class CharacterCounter extends Component {
   view() {
     return (
       <div className="CharacterCounter">
+        <Tooltip text={app.translator.trans('dhtml-composer.forum.composer.character_counter')}>
         <button className="Button">
           <span className="Button-label">{this.charCount}</span>
         </button>
+        </Tooltip>
       </div>
     );
   }
